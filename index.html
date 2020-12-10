@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>McDonand's</title>
+</head>
+
+<body>
+  <section class="section">
+    <div class="circle">
+    </div>
+    <header class="header__body">
+      <a href="https://www.mcdonalds.com/us/en-us.html">
+        <img src="images/logo.png" alt="" class="header__logo">
+      </a>
+      <div class="toggle" onclick="toggleMenu()"></div>
+      <ul class="header__menu">
+        <li><a href="https://www.mcdonalds.com/us/en-us/about-our-food.html">VIEW PRODUCTS</a></li>
+        <li><a href="https://www.mcdonalds.com/us/en-us/mcdonalds-email-signup.html">NEWSLETTER</a></li>
+        <li><a href="https://www.mcdonalds.com/us/en-us/deals.html">WHAT'S NEW</a></li>
+        <li><a href="https://www.mcdonalds.com/us/en-us/contact-us.html">CONTACT US</a></li>
+      </ul>
+      <!-- /.header__menu -->
+
+      <!-- /.header__logo -->
+    </header>
+    <!-- /.header__body -->
+    <div class="content">
+      <div class="textBox">
+        <h2>
+          I'm Lovin'<br><span>it Live <sup>®</sup></span>
+        </h2>
+        <p>From adding more balanced options to our Happy Meal®, to serving up fresh beef Quarter Pounder® burgers that
+          are cooked
+          when you order, we’re always finding ways to show our commitment to our customers and our food.
+        </p>
+        <a href="https://www.mcdonalds.com/us/en-us/about-our-food.html">View all products</a>
+      </div>
+
+      <div class="imgBox">
+
+        <img src="images/mc1.png" class="mc">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li>
+        <img src="images/mc1.png" onclick="imgSlider('images/mc1.png');changeBgColor('#CD9468')">
+      </li>
+      <li><img src="images/mc2.png" onclick="imgSlider('images/mc2.png');changeBgColor('#381A18')"></li>
+      <li><img src="images/mc3.png" onclick="imgSlider('images/mc3.png');changeBgColor('#261F0F')"></li>
+    </ul>
+    <div class="sci">
+      <a href="https://www.facebook.com/McDonalds/"><img src="images/facebook.png" alt=""></a>
+      <a href="https://www.instagram.com/mcdonalds/"><img src="images/instagram.png" alt=""></a>
+      <a href="https://twitter.com/mcdonalds"><img src="images/twitter.png" alt=""></a>
+    </div>
+
+  </section>
+  <script type="text/javascript">
+
+    function imgSlider(anything) {
+      document.querySelector('.mc').src = anything;
+    }
+
+    function changeBgColor(color) {
+      const sec = document.querySelector('.section');
+      sec.style.background = color;
+    }
+    function toggleMenu() {
+      const toggleMenu = document.querySelector('.toggle');
+      const header__menu = document.querySelector('.header__menu');
+      toggleMenu.classList.toggle('active');
+      header__menu.classList.toggle('active');
+    }
+  </script>
+
+</body>
+
+</html>
