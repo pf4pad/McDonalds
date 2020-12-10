@@ -176,7 +176,7 @@ section {
 }
 
 .thumb li img {
-  max-width: 80px;
+  max-width: 100px;
 }
 
 .sci {
@@ -333,12 +333,12 @@ section {
   }
 
   .imgBox img {
-    min-width: 150px;
+    min-width: 200px;
     height: auto;
   }
 
   .thumb li img {
-    max-width: 30px;
+    max-width: 50px;
   }
 
   .sci {
