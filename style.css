@@ -334,6 +334,7 @@ section {
 
   .imgBox img {
     min-width: 150px;
+    height: auto;
   }
 
   .thumb li img {
