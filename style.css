@@ -337,7 +337,7 @@ section {
 
   }
 
-  .imgBox img:focus {
+  .imgBox img:hover {
 
     transform: translateX(-40px);
     transition: 0.6s;
